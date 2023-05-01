@@ -4,10 +4,6 @@ open powershell/cmd and input:  C:\Users\acer\AppData\Local\Programs\Python\Pyth
 
 type this: .\Scripts\activate
 
-then type: pip install -r requirements.txt
+then type: pip install -r SLP\requirements.txt
 
-
-
-
-
-python -m django startproject blahblah .
+python -m django startproject mainstuff SLP\.
