@@ -1,0 +1,13 @@
+Install first python 3.6.8
+acer = your device's user name
+open powershell/cmd and input:  C:\Users\acer\AppData\Local\Programs\Python\Python36\python.exe -m venv .
+
+type this: .\Scripts\activate
+
+then type: pip install -r requirements.txt
+
+
+
+
+
+python -m django startproject blahblah .
