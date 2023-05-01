@@ -1,10 +1,7 @@
+For windows
 Install first python 3.6.8
-acer = your device's user name
-input first cd ..
-open powershell/cmd and input:  C:\Users\acer\AppData\Local\Programs\Python\Python36\python.exe -m venv .
-
-type this: .\Scripts\activate
-
+open powershell/cmd and input first cd .. (directory should be outside of the folder named SLP)
+input:  C:\Users\"NAME"\AppData\Local\Programs\Python\Python36\python.exe -m venv .
+then type this: .\Scripts\activate
 then type: pip install -r SLP\requirements.txt
-
 python -m django startproject mainstuff SLP\.
