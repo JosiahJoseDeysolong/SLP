@@ -1,1 +1,5 @@
 django>=3.2,<3.3
+psycopg2
+env
+djangorestframework
+django-cors-headers

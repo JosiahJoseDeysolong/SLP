@@ -1,7 +1,0 @@
-For windows
-Install first python 3.6.8
-open powershell/cmd and input first cd .. (directory should be outside of the folder named SLP)
-input:  C:\Users\"NAME"\AppData\Local\Programs\Python\Python36\python.exe -m venv .
-then type this: .\Scripts\activate
-then type: pip install -r SLP\requirements.txt
-python -m django startproject mainstuff SLP\.
