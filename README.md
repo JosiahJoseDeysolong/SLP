@@ -1,5 +1,3 @@
-# Group C - SLP Data and User Control Management System
-
 ## Front-end Development
 - HTML
 - CSS
@@ -16,11 +14,28 @@
 - A virtual Python environment is highly recommended
 - Configure database info and credentials on **backend/settings.py**, either change or match
 2. On a terminal instance, install back-end pre-requisites from **requirements.txt**
+
+```
+# Check settings.py inside of backend and change towards your db settings
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '(db name here)',
+        'USER': '(username of db here)',
+        'PASSWORD': '(password here)',
+        'HOST':'localhost',
+        'PORT': '5432'
+    }
+}
+```
+
 ```
 # Activate venv if available
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
+python manage.py createsuperuser
 python manage.py runserver
 ```
 3. On a separate terminal instance, install front-end pre-requisites
