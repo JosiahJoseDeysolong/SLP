@@ -1,0 +1,112 @@
+.login-button { 
+    width: 115px;
+    height: 40px;
+    left: 1088px;
+    top: 56px;
+    cursor: pointer;
+    background: #283971;
+    border-radius: 22px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;;
+    background-color: #283971;
+    border-radius: 4px;
+    margin: 0 auto;
+    mix-blend-mode: normal;
+    position: relative;
+    width: 538px;
+    height: 543px;
+
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .login-heading {
+    margin: 70px auto 0;
+    color: #DFE1EA;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px; 
+    width: 538px;
+    background: #A19158;
+    padding: 12px 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 27px;
+    line-height: 33px;
+    
+   }
+
+   .input-heading {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    width: 71px;
+    height: 24px;
+   
+    
+    }
+  
+  .input-field {    
+    padding: 18px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    width: 370px;
+    height: 16px;
+    background-color: #DFE1EA;
+
+  }
+  
+  .login-submit {
+    margin: 185px auto 0;
+    position: absolute;
+    top: 50%; /* Position it vertically at 50% */
+    left: 50%; /* Position it horizontally at 50% */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    color: #283971;
+    width: 328px;
+    height: 65px;
+    background: #DFE1EA;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+ 
+  }
+  
+

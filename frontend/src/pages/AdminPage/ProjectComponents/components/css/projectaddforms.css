@@ -1,0 +1,110 @@
+/* projectaddforms.css */
+
+.f-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .f-modal-content {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 800px; /* Increase the width as needed */
+    height: 600px; /* Increase the height as needed */
+  }
+  
+  .f-close-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .f-h2 {
+    color: #283971;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center; /* Add this line */
+  }
+  
+  .f-students-container {
+    display: flex;
+    justify-content: space-around; /* Adjust the value as needed */
+  }
+  
+  .f-assigned-students,
+  .f-unassigned-students {
+    width: 45%;
+  }
+
+  .f-student-list {
+    background-color: #FFFFFF;
+    border: 1px solid #0f0f0f;
+    padding: 10px;
+    height: 400px; /* Increase the height as needed */
+    overflow-y: auto; /* Add scrollbar if content exceeds container height */
+  }
+  
+  .f-h2 {
+    color: #283971;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .f-button {
+    background-color: #A19158;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .f-submit-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .f-submit-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .f-submit-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .f-close-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

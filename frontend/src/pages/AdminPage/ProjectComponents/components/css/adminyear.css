@@ -1,0 +1,168 @@
+.adpy-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.adpy-header-1,
+.adpy-header-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.adpy-year-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.adpy-year-list {
+  list-style: none;
+  display: grid;
+ 
+  padding: 0;
+}
+
+.adpy-semester-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 0;
+}
+
+.adpy-year-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  line-height:1.5;
+  color: #3A53A5;
+  background: #EFEFEF;
+  width: 300px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 100px solid #EFEFEF;
+  border-bottom: 100px solid #EFEFEF;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.adpy-year-item:hover {
+  background-color: lightgray;
+}
+
+.adpy-year-add {
+  background-color: black;
+}
+
+.adpy-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.adpy-column {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.adpy-center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.adpy-center-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.adpy-year-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.adpy-semester-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  padding: 0;
+}
+
+.adpy-year-item {
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.adpy-year-item:hover {
+  background-color: lightgray;
+}
+
+.adpy-file-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 1px dashed #999;
+  padding: 100px; /* Increase the padding value */
+}
+
+.adpy-file-upload-label {
+  cursor: pointer;
+}
+
+.adpy-file-upload-input {
+  display: none;
+}
+
+.adpy-file-selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+   padding: 20px;
+}
+
+.adpy-file-name {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.adpy-clear-file {
+  margin-top: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.adpy-upload-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+

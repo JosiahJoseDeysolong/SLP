@@ -1,0 +1,186 @@
+
+
+.inv-main-container {
+    width: 1200px; /* Adjust the width as needed */
+    height: 2000px; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inv-inner-container {
+    width: 90%; /* Adjust the width as needed */
+    height: 90%; /* Adjust the height as needed */
+    display: flex;
+  }
+  
+  .inv-column {
+    flex: 1;
+     padding: 10px;
+  }
+
+
+  .inv-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Adjusted property */
+    align-items: center;
+    margin-top: 0;
+  }
+  
+
+  .inv-button-pic {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #283971;
+    border: none;
+
+    border-radius: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+  }
+
+
+  .inv-button-pic label:hover {
+    background-color: #283971;
+    color: #ffffff;
+  }
+
+
+  .inv-upload-pic {
+    text-align: center;
+    width: 400px; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
+    border: 1px solid black;
+    padding: 10px; /* Add padding here */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inv-button-pic label {
+    display: block;
+    cursor: pointer;
+    padding: 10px 20px;
+     border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .inv-button-pic button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+   
+
+
+
+  
+  .inv-upload-pic img {
+    max-width: 378px; /* Adjust the max-width */
+    max-height: 328px; /* Adjust the max-height */
+    height: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Add this line */
+  }
+  
+  
+  .inv-upload-pic label {
+    display: block;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .inv-upload-pic button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    border: none;
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; /* Adjust the margin bottom value as needed */
+  }
+  
+  .row-label {
+    margin-right: 10px; /* Adjust the margin right value as needed */
+  }
+  
+  .row-value {
+    flex-grow: 1;
+  }
+  
+
+  .inv-left-column {
+    display: flex;
+    border: 1px solid black; /* Add border */
+  }
+  
+  .inv-left-column > div {
+    width: 200px; /* Set a fixed width for the columns */
+    padding: 20px; /* Adjust the padding as needed */
+  }
+
+  .student-list-container {
+    height: 300px;
+    width: 400px;
+    overflow: auto;
+    border: 1px solid #000000;
+  }
+  
+
+   .student-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.header-text {
+  color: #283971;
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 28px;
+  border-bottom: 1px solid #283971;
+  margin: 0;
+}
+
+.edit-button {
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #283971;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #283971;
+  color: #ffffff;
+}
+
+ 

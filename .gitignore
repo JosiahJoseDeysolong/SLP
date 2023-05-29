@@ -1,0 +1,28 @@
+# Python
+__pycache__/**
+venv/**
+.env
+*.pyc
+*.pyo
+
+# Node.js and NPM
+node_modules/**
+
+# Build files
+build/**
+dist/**
+
+# ESLint cache
+.cache/**
+.eslintcache/**
+
+# Environment variables
+.env
+
+# Log files
+*.log
+*.log.*
+
+# IDE
+.idea/**
+.vscode/**

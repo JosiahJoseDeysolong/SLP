@@ -1,0 +1,70 @@
+.SearchBox {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #3A53A5;
+    border-radius: 10px;
+    color: #FFFF;
+}
+.SearchBox .search-bar{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    background-color: #FFFF;
+    height: 15px;
+}
+
+.title-box{
+    display: flex;
+    background-color: #A19158;
+    width: 95%;
+    height: 50px;
+    border-radius: 10px;
+    text-align: left;
+    align-items: center;
+}
+
+.SearchResults{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80vw;
+    justify-content: center;
+    background-color: #FFFF;
+    text-align: left;
+}
+
+.SearchResults .student-list{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.SearchResults .student-list .name{
+    margin: 4px;
+}
+
+.search-button{
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    color: #FFFF;
+    background-color: #3A53A5;
+
+}

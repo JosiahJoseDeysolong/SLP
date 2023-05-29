@@ -1,0 +1,225 @@
+/* ./components/adminprojects.css */
+
+.adp-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adp-header-container {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.adp-header-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 58px;
+  text-align: center;
+  color: #283971; /* Updated text color to a readable color */
+}
+
+.adp-header-underline {
+  border: none;
+  height: 2px;
+  background-color: #283971; /* Change the background color */
+  /* Add any additional styles or modifications here */
+}
+
+.custom-underline {
+  width: 40%; /* Adjust the width as per your preference */
+  margin-top: 10px; /* Add margin-top to create space above the line */
+  margin-bottom: 10px; /* Add margin-bottom to create space below the line */
+}
+
+.adp-year-section {
+  margin-bottom: 16px;
+}
+
+.adp-year-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adp-year-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.adp-year-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 50px;
+  line-height: 1.5;
+  color: white;
+  background: #3A53A5;
+  width: 300px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 100px solid #efefefda;
+  border-bottom: 100px solid #efefefda;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  
+}
+
+.project-name {
+  max-width: 90%; /* Adjust the maximum width as per your preference */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.adp-year-item.add-year-button {
+  font-family: 'Inter', sans-serif;
+  font-size: 75px;
+  line-height: 1.5;
+  color: #3A53A5;
+  background: #EFEFEF;
+  width: 300px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 100px solid #EFEFEF;
+  border-bottom: 100px solid #EFEFEF;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+.adp-year-item:hover {
+  background-color: #283971;
+  border-color: #DFE1EA;
+}
+
+
+.adp-but {
+  color: #283971;
+  font-size: 75px;
+  width: 300px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 100px solid #efefefda;
+  border-bottom: 100px solid #efefefda;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Combined transition */
+}
+
+.adp-but:hover {
+  background-color: #DFE1EA;
+  border-color: #DFE1EA;
+}
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+.adp-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.adp-modal-container {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+}
+
+.adp-modal-container h2 {
+  margin-bottom: 16px;
+}
+
+.adp-modal-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.adp-modal-container label {
+  color: #283971;
+  font-size: 18px;
+}
+
+.adp-modal-container input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #DFE1EA;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.adp-modal-container .error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.adp-modal-container button {
+  color: #FFFFFF;
+  background-color: #283971;
+  border: 1px solid #DFE1EA;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.adp-modal-container button:hover {
+  background-color: #1c2b5a;
+}
+
+.adp-modal-container .cancel-button {
+  color: #283971;
+  background-color: #EFEFEF;
+}
+
+.adp-modal-container .cancel-button:hover {
+  background-color: #D3D3D3;
+}

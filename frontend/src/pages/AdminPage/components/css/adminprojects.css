@@ -1,0 +1,76 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-1,
+.header-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.year-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.year-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 0;
+}
+
+.semester-list {
+  list-style: none;
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+}
+
+.year-item {
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.year-item:hover {
+  background-color: lightgray;
+}
+
+.year-add {
+  background-color: black;
+}
+
+
+.white-text {
+  color: whitesmoke;
+}
+
+.red-text {
+  color: red;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.column {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+

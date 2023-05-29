@@ -1,5 +1,12 @@
-django>=3.2,<3.3
-psycopg2
-env
-djangorestframework
+asgiref
+Django
 django-cors-headers
+djangorestframework
+djangorestframework-simplejwt
+psycopg2
+PyJWT
+pytz
+sqlparse
+tzdata
+Pillow
+python-docx

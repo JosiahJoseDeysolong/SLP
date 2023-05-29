@@ -1,0 +1,37 @@
+
+.card1{
+    margin: 10px;
+    background-color: #A19158;
+    color: #FFFFFF;
+    width: 15vw;
+
+}
+
+.cardImage {
+  /* margin: auto; */
+  display: flex;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #283971;
+  color: #000000;
+}
+
+.generalContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  max-height: 35vw;
+  margin-top: 30px;
+  background-color: #a19158;
+  color: #ffffff;
+}
+
+h3 {
+  padding-left: 10px;
+}

@@ -1,0 +1,359 @@
+/* projectaddforms.css */
+
+.p-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .p-modal-content {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 800px; /* Increase the width as needed */
+    height: 600px; /* Increase the height as needed */
+  }
+  
+  .p-close-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .p-h3 {
+    color: #283971;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left; /* Add this line */
+  }
+
+  .p-h3 {
+    color: #283971;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+
+  }
+  
+
+  .p-h2 {
+    color: #283971;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center; /* Add this line */
+  }
+  
+  .p-students-container {
+    display: flex;
+    justify-content: space-around;  
+    width: 800px;
+  }
+  
+  .p-assigned-students,
+  .p-unassigned-students {
+    width: 45%;
+  }
+
+  .p-student-list {
+    background-color: #FFFFFF;
+    border: 1px solid #0f0f0f;
+    padding: 10px;
+    height: 400px; /* Increase the height as needed */
+    overflow-y: auto; /* Add scrollbar if content exceeds container height */
+  }
+  
+  .p-h2 {
+    color: #283971;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+
+  }
+  
+  
+  .p-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 20px 52px;
+  }
+  
+  .p-button.small {
+    padding: 2px 5px;
+  }
+  
+  .p-button.medium {
+    padding: 5px 10px;
+  }
+  
+  .p-button.large {
+    padding: 10px 15px;
+  }
+  
+  
+  .p-submit-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .p-submit-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .p-submit-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .p-close-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  .p-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .p-modal-content {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Adjust the width as needed */
+    max-height: 600px; /* Add a max-height and adjust as needed */
+    overflow-y: auto;
+    width: 500px; /* Add scrollbar if content exceeds container height */
+  }
+  
+  .p-close-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .p-h2 {
+    color: #283971;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .p-form-container {
+    margin-top: 20px;
+  }
+  
+  .p-input-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .p-input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+  }
+  
+  .p-error-message {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .p-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .p-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .p-submit-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .p-close-button {
+    background-color: #3A53A5;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+/* Color theme */
+:root {
+  --white: #FFFFFF;
+  --light-gray: #EFEFEF;
+  --gray: #DFE1EA;
+  --blue: #3A53A5;
+  --dark-blue: #283971;
+}
+
+.adp-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adp-modal-container {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 100%;
+}
+
+.adp-modal-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.adp-modal-header-text {
+  color: var(--dark-blue);
+  font-size: 20px;
+}
+
+.adp-modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.adp-modal-label {
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+}
+
+.adp-modal-input {
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.adp-modal-error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.adp-modal-submit-button {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.adp-modal-cancel-button {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.adp-year-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.adp-year-item {
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: var(--light-gray);
+  font-size: 16px;
+}
+
+.adp-add-year-button {
+  padding: 10px;
+  padding-left: 101px;
+  padding-right: 110px;
+
+  border: 4px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+

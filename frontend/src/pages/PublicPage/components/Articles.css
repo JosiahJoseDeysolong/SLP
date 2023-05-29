@@ -1,0 +1,14 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #283971;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  width: 50vw;
+  /* Set the hr color */
+    color: #283971;
+    background-color: #283971;
+}

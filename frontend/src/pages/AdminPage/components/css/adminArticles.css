@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+  overflow-y: scroll;
+  border-left: 1px solid black;
+}
+
+.editor-input {
+  height: 100%;
+  width: 100%;
+}
+
+.add-article {
+  width: 115px;
+  height: 40px;
+  left: 1088px;
+  top: 56px;
+  cursor: pointer;
+  background: #283971;
+  border-radius: 22px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+}

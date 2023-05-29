@@ -1,0 +1,61 @@
+.Column {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.kanangPinakaBottomNaJud {
+    margin-right: 10vw;
+    margin-left: auto;
+    text-align: right;
+    max-width: 20vw;
+    font-size: 13px;
+    color: #000000;
+}
+
+.center-this-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bottomDetails {
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80vw;
+}
+
+.Contacts {
+    margin-left: 10vw;
+    max-width:20vw ;
+}
+
+.RequestAccess {
+    max-width: 20vw;
+    color: #000000;
+    margin-right: 10vw;
+}
+
+.buttons { 
+    width: 180px;
+    height: 40px;
+    left: 1088px;
+    top: 56px;
+    cursor: pointer;
+    background: #283971;
+    border-radius: 22px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    
+}

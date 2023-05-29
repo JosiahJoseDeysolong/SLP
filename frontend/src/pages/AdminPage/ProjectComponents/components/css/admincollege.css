@@ -1,0 +1,37 @@
+.adpc-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adpc-header-1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.adpc-college-container {
+  width: 300px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.adpc-college-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.adpc-college-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.adpc-college-item:hover {
+  background-color: #f2f2f2;
+}

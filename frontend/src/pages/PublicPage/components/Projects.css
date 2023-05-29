@@ -1,0 +1,53 @@
+.projects-navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 16px;
+}
+.projects-nav-button{
+    border-radius: 92px;
+    border-style: solid;
+    border-width: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 10vw;
+    min-width: 120px;
+    aspect-ratio: 3/1;
+    margin-top: 30px;
+
+    text-decoration: none;
+    color: #333;
+    margin-right: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100%;
+    line-height: 18px;
+    text-align: center;
+    color: #283971;
+    position: relative; /* Enable positioning for pseudo-element */
+  }
+
+.generalContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-height: 35vw;
+    margin-top: 30px;
+    background-color: #A19158;
+    color: #FFFFFF;
+}
+
+.partner .card{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
