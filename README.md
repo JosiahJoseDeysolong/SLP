@@ -1,51 +1,43 @@
-## Front-end Development
-- HTML
-- CSS
-- JavaScript
-- NodeJS 18.x.x 
+Group C - SLP Data and User Control Management System
 
-## Back-end Development
-- Python 11.x.x
-- Django
-- PostgreSQL
+/src/pages - dira lang mo mag add og pages(.jsx)
+e butang lang dayun and route sa App.jsx og sa urls.py
 
-## Installation
-1. Install pre-requisites, Python, PostrgreSQL, NodeJS
-- A virtual Python environment is highly recommended
-- Configure database info and credentials on **backend/settings.py**, either change or match
-2. On a terminal instance, install back-end pre-requisites from **requirements.txt**
+by default sqlite ang database sa django, e change lang
+nato unya into postgresql
 
-```
-# Check settings.py inside of backend and change towards your db settings
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '(db name here)',
-        'USER': '(username of db here)',
-        'PASSWORD': '(password here)',
-        'HOST':'localhost',
-        'PORT': '5432'
-    }
-}
-```
+Instructions:
 
-```
-# Activate venv if available
-pip install -r requirements.txt
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser
-python manage.py runserver
-```
-3. On a separate terminal instance, install front-end pre-requisites
-```
-npm install
-npm run build
-npm start
-```
-**NOTE:** Whenever there are changes to the models, remember to make migrations and migrate through **manage.py**.
-```
-python manage.py makemigrations
-python manage.py migrate
-```
+do this after pulling the code from github:
+
+    npm install
+    npm run build
+
+^^^ this is for the node_modules and build folders na wala
+na nake ge include kay dako ra kaayo siya
+
+To run the django server:
+    python manage.py runserver
+
+If you want to edit the frontend ONLY:
+
+    npm start
+
+^^^ mas faster kung kani lang if frontend ra ang imo e edit
+
+    npm run build
+
+^^^every after nimo e edit frontend, kay sa build folder nako ge base ang sa django
+
+For Windows
+Install first python 3.6.8
+make a new folder
+open powershell/cmd into that folder
+input:  C:\Users\"NAME"\AppData\Local\Programs\Python\Python36\python.exe -m venv . (Find the installation folder of python3.6)
+then type this: .\Scripts\activate
+git clone https://github.com/2202-XU-CSCC22B/groupC.git
+then type: pip install -r groupC\requirements.txt
+then cd groupC/reactslp and type npm install
+then npm run build (make sure you cd into reactslp)
+cd into djangoslp and type python manage.py runserver

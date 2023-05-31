@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import './components/css/admincollege.css';
 import NavbarProjectPage from "./components/NavbarProjectPage";
 import { BASE_URL } from '../../../apiConfig'
+import ReportSemesterGeneration from './components/ReportSemesterGeneration'
 
 const AdminCollege = () => {
   const storedYear = localStorage.getItem('selectedYear');
@@ -158,8 +159,10 @@ const AdminCollege = () => {
           }}>
            Total Students: <span style={{ fontWeight: 'normal' }}>{sum.total_students}</span>
         </div>
+
         
       </div>
+      <ReportSemesterGeneration id={semId} />
 
       <div>
         <h1 className="adp-header-text">List of Colleges</h1>

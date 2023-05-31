@@ -16,7 +16,7 @@ const AdminYear = () => {
   const [isUploading, setIsUploading] = useState(false);
   const { accessToken } = useContext(AuthContext);
   const navigate = useNavigate();
-  const [fileSelected, setFileSelected] = useState(false); // New state variable
+  const [fileSelected, setFileSelected] = useState(false);
 
   let yearIdold = '';
 
@@ -31,7 +31,7 @@ const AdminYear = () => {
       const data = response.data;
       if (response.status === 200) {
         setYearG(data);
-        setAnnualSlpPlanExists(data && data.annual_slp_plan !== null); // Add null check
+        setAnnualSlpPlanExists(data && data.annual_slp_plan !== null);
       } else {
         alert('Error fetching Year.');
       }

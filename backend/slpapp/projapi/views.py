@@ -29,6 +29,96 @@ from ..models import (
     Picture
 )
 
+from django.http import FileResponse
+from docx import Document
+from docx.shared import Cm
+import tempfile
+from ..models import Semester, Project, Student, Partner
+import tempfile
+ 
+ 
+from docx.shared import Pt
+from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
+from docx.enum.section import WD_ORIENTATION
+
+
+def download_semester_data(request, semester_id):
+    semester = Semester.objects.get(idSe=semester_id)
+    projects = Project.objects.filter(semester=semester)
+    unique_academic_projects = projects.distinct('project_name').count()
+    total_projects = projects.count()
+    students = Student.objects.filter(project__semester=semester)
+    total_students = students.count()
+    completed_projects = projects.filter(status='Completed').count()
+    ongoing_projects = projects.filter(status='Ongoing').count()
+    partners = Partner.objects.filter(project__semester=semester)
+    total_partners = partners.count()
+    doc = Document()
+
+    # Set the document orientation to landscape
+    section = doc.sections[0]
+    section.orientation = WD_ORIENTATION.LANDSCAPE
+
+    doc.add_heading('Semester Data', level=1)
+    table = doc.add_table(rows=7, cols=6)
+    table.style = 'Table Grid'
+
+    for row in table.rows:
+        for col_idx in range(4):
+            row.cells[col_idx].text = ''
+
+    table.cell(0, 0).text = 'PRIORITIES'
+    table.cell(1, 0).text = 'Enhanced Social Development Work'
+
+    table.cell(0, 1).text = 'OBJECTIVES'
+    table.cell(1, 1).text = '1. Increased participation of academic programs in the service-learning engagements'
+
+    table.cell(0, 2).text = 'MAJOR PROGRAM/PROJECT'
+    table.cell(1, 2).text = 'Service-Learning Program (SLP)'
+
+    table.cell(0, 3).text = 'KEY PERFORMANCE INDICATORS (KPIs)'
+    table.cell(0, 4).text = 'STATUS/UPDATE'
+    table.cell(0, 5).text = 'REMARKS'
+
+    table.cell(1, 4).text = 'Number of unique academic projects:'
+    table.cell(1, 5).text = str(unique_academic_projects)
+
+    table.cell(2, 4).text = 'Total number of projects:'
+    table.cell(2, 5).text = str(total_projects)
+
+    table.cell(3, 4).text = 'Total number of students:'
+    table.cell(3, 5).text = str(total_students)
+
+    table.cell(4, 4).text = 'Total number of completed projects:'
+    table.cell(4, 5).text = str(completed_projects)
+
+    table.cell(5, 4).text = 'Total number of ongoing projects:'
+    table.cell(5, 5).text = str(ongoing_projects)
+
+    table.cell(6, 4).text = 'Total number of partners involved:'
+    table.cell(6, 5).text = str(total_partners)
+
+    # Adjust text alignment and font size
+    for row in table.rows:
+        for cell in row.cells:
+            cell.paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+            for paragraph in cell.paragraphs:
+                for run in paragraph.runs:
+                    run.font.size = Pt(10)
+
+    temp_file = tempfile.NamedTemporaryFile(suffix='.docx', delete=False)
+    temp_file_path = temp_file.name
+    doc.save(temp_file_path)
+    temp_file.close()
+
+    return FileResponse(open(temp_file_path, 'rb'), as_attachment=True, filename='semester_data.docx')
+
+
+ 
+
+
+
+
 class AssignDeanView(APIView):
     def post(self, request, college_id):
         try:

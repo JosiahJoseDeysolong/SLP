@@ -13,10 +13,11 @@ from .views import (DeanSearchView, CoorSearchView,
                     AssignDeanView, AssignCoordinatorView,
                     FacultyNotInProjectView, AssignFacultyToProject,
                     UnassignFacultyFromProject, AssignPartnerView,
-                    PartnerNotInProjectView)
+                    PartnerNotInProjectView, download_semester_data)
 
 urlpatterns = [
     path('', views.slpapis, name="slp" ),
+    path('download_semester_data/<int:semester_id>/', download_semester_data, name='download_semester_data'),
     path('auto-create-years/', views.create_school_year, name="auto-create-years" ),
     path('projects/<int:project_id>/students/count/', views.get_number_of_students, name="project-students-count"),
     path('api/school-year/<int:idSy>/file/', SchoolYearFileView.as_view(), name='school-year-file'),
