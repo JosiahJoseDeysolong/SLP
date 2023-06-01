@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
+from django.shortcuts import get_object_or_404
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -19,6 +20,25 @@ class UserSerializer(serializers.ModelSerializer):
         user = User.objects.create_user(**validated_data)
         return user
 
+
+class UpdateUserSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True, required=False)
+    is_superuser = serializers.BooleanField(default=False)
+    is_staff = serializers.BooleanField(default=False)
+
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'password', 'email', 'first_name', 'last_name', 'is_superuser', 'is_staff')
+
+    def update(self, instance, validated_data):
+        # Exclude password from validated data if not provided
+        password = validated_data.pop('password', None)
+        if password:
+            instance.set_password(password)
+
+        return super().update(instance, validated_data)
+    
+    
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
@@ -62,7 +82,35 @@ def get_user_list(request):
                    'is_staff': user.is_staff,
                    'first_name': user.first_name,
                    'last_name': user.last_name,
-
+                    'id': user.id,
                    
                    } for user in users]
     return Response(user_data)
+
+@api_view(['PUT'])
+def editUser(request, user_id):
+    try:
+        user = User.objects.get(pk=user_id)
+    except User.DoesNotExist:
+        return Response({'message': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+    
+    serializer = UserSerializer(user, data=request.data, partial=True)  # Use partial=True for partial updates
+    if serializer.is_valid():
+        # Exclude password field if not provided
+        password = request.data.get('password')
+        if not password:
+            serializer.validated_data.pop('password', None)
+        
+        serializer.save()
+        return Response({'message': 'User updated successfully'})
+    else:
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['DELETE'])
+def deleteUser(request, user_id):
+    user = get_object_or_404(User, pk=user_id)
+    if not request.user.is_superuser:
+        return Response({'message': 'Only superusers can delete users.'}, status=status.HTTP_403_FORBIDDEN)
+    user.delete()
+    return Response({'message': 'User deleted successfully'})
