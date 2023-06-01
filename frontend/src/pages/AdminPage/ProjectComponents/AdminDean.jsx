@@ -211,7 +211,7 @@ const AdminDean = () => {
     <div className="adpy-page-container">
       
       <NavbarProjectPage />
-      <div className="ap-header-container">
+      <div className="adpy-page-container">
         <h1 className="ap-header-text">DEAN DIRECTORY</h1>
         <hr className="ap-header-underline" />
         <div className="f-students-container">
@@ -231,43 +231,35 @@ const AdminDean = () => {
         <ul className="p-h3">
 
 
-        {searchB.trim() !== '' ? (
-  searchDean.map((dean) => (
-    <li key={dean.idDe} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-      <span>
-        {dean.dean_last_name}, {dean.dean_first_name} {dean.dean_middle_name}
-      </span>
-      <button className="p-button" onClick={() => deleter(dean.idDe)}>Delete</button>
-    </li>
-  ))
-) : (
-  // Render default list of deans if search bar is empty and listDean is not null
-  listDean !== null &&
-  listDean.map((dean) => (
-    <li key={dean.idDe} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-      <span>
-        {dean.dean_last_name}, {dean.dean_first_name} {dean.dean_middle_name}
-      </span>
-      <button className="p-button" onClick={() => deleter(dean.idDe)}>Delete</button>
-    </li>
-  ))
-)}
+                {searchB.trim() !== '' ? (
+          searchDean.map((dean) => (
+            <li key={dean.idDe} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <span>
+                {dean.dean_last_name}, {dean.dean_first_name} {dean.dean_middle_name}
+              </span>
+              <button className="p-button" onClick={() => deleter(dean.idDe)}>Delete</button>
+            </li>
+          ))
+        ) : (
+          listDean !== null &&
+          listDean.map((dean) => (
+            <li key={dean.idDe} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <span>
+                {dean.dean_last_name}, {dean.dean_first_name} {dean.dean_middle_name}
+              </span>
+              <button className="p-button" onClick={() => deleter(dean.idDe)}>Delete</button>
+            </li>
+          ))
+        )}
 
+                </ul>
 
+              </div>
 
-
-        </ul>
-
-        
-
-      </div>
-
-      
-
-      {showModal && (
-        <AddDeanModal onClose={closeModal} onSubmit={handleDeanSubmit} />
-      )}
-</div>
+              {showModal && (
+                <AddDeanModal onClose={closeModal} onSubmit={handleDeanSubmit} />
+              )}
+        </div>
 
 
     </div>

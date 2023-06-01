@@ -76,7 +76,6 @@ const AddYearModal = ({ onClose, onSubmit, listYear }) => {
         className="adp-modal-input"
       />
 
-      {/* Error message */}
       {error && <div className="adp-modal-error">{error}</div>}
 
       <div className="adp-modal-buttons-container">
@@ -140,75 +139,66 @@ const AdminProjects = () => {
 
   return (
     <div className="adpy-page-container">
+      <NavbarProjectPage />
+        <div className="adp-header-container">
+          <h1 className="adp-header-text">
+            PROJECTS DIRECTORY
+          </h1>
+          <hr className="adp-header-underline" />
+        </div>
+    <div className="adp-year-section">
+      <h1 className="adp-header-text">
+        SCHOOL YEARS
+      </h1>
 
-          <NavbarProjectPage />
-      <div className="adp-header-container">
-        <h1 className="adp-header-text">
-          PROJECTS DIRECTORY
-        </h1>
-        <hr className="adp-header-underline" />
-      </div>
-      
-
-
-      
-
-  <div className="adp-year-section">
-  <h1 className="adp-header-text">
-    SCHOOL YEARS
-  </h1>
-
-  <div className="py-students-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  
-  <button className="adp-add-year-button" onClick={handleAddYearClick}>
-    Add School Year
-  </button>
-  
-  <ul className="adp-year-list" style={{ listStyle: 'none', padding: 0 }}>
-
-
-
+    <div className="py-students-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
     
-    {listYear !== null &&
-      listYear.map((year) => (
-        <li
-          key={year.idSy}
-          onClick={() => handleYearClick(year)}
-          className="adp-year-item"
-          style={{ 
-            border: '3px solid #283971',
-            padding: '10px',
-            margin: '10px',
-            textAlign: 'center',
-            fontWeight: 'bold',
-            color: '#283971', 
-            fontSize: '40px',
-          }}
-        >
-          SY {year.year_name}
-        </li>
-      ))}
-  </ul>
+    <button className="adp-add-year-button" onClick={handleAddYearClick}>
+      Add School Year
+    </button>
+    
+    <ul className="adp-year-list" style={{ listStyle: 'none', padding: 0 }}>
 
- 
+      {listYear !== null &&
+        listYear.map((year) => (
+          <li
+            key={year.idSy}
+            onClick={() => handleYearClick(year)}
+            className="adp-year-item"
+            style={{ 
+              border: '3px solid #283971',
+              padding: '10px',
+              margin: '10px',
+              textAlign: 'center',
+              fontWeight: 'bold',
+              color: '#283971', 
+              fontSize: '40px',
+            }}
+          >
+            SY {year.year_name}
+          </li>
+        ))}
+    </ul>
 
-  {/* Add year modal */}
-  {isModalOpen && (
-    <div className="adp-modal-overlay">
-      <AddYearModal
-        onClose={handleModalClose}
-        onSubmit={handleModalSubmit}
-        listYear={listYear}
-      />
-    </div>
-  )}
-</div>
+  
+
+    {/* Add year modal */}
+    {isModalOpen && (
+      <div className="adp-modal-overlay">
+        <AddYearModal
+          onClose={handleModalClose}
+          onSubmit={handleModalSubmit}
+          listYear={listYear}
+        />
+      </div>
+    )}
+  </div>
 
 
 
-</div>
+  </div>
 
-    </div>
+      </div>
   );
 };
 

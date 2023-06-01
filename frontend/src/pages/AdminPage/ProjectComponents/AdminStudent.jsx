@@ -211,7 +211,7 @@ const AdminStudent = () => {
     <div className="adpy-page-container">
       
       <NavbarProjectPage />
-      <div className="ap-header-container">
+      <div className="adpy-page-container">
         <h1 className="ap-header-text">STUDENT DIRECTORY</h1>
         <hr className="ap-header-underline" />
         <div className="f-students-container">
@@ -241,7 +241,6 @@ const AdminStudent = () => {
     </li>
   ))
 ) : (
-  // Render default list of deans if search bar is empty and listDean is not null
   listDean !== null &&
   listDean.map((dean) => (
     <li key={dean.idSt} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

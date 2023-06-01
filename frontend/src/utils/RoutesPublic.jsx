@@ -8,8 +8,8 @@ const PrivateRoutes = () => {
     
     return(
     <>
-        {!user ? ( <Outlet />) : user && !user.is_superuser ? (<Navigate to="/super" />) : 
-         user && user.is_superuser ? (<Navigate to="/admin" />) :null}
+        {!user ? ( <Outlet />) : user && !user.is_staff ? (<Navigate to="/super" />) : 
+         user && user.is_staff ? (<Navigate to="/admin" />) :null}
     </>
     )
 }

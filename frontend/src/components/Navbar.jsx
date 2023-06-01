@@ -56,7 +56,7 @@ const Navbar = () => {
         </>
       )}
       
-      {user && !user.is_superuser &&(
+      {user && !user.is_staff &&(
           <>
             <Link to="/super" className="nav-button">HOME</Link>
             <Link to="/super-projects" className="nav-button">PROJECTS</Link>
@@ -66,12 +66,19 @@ const Navbar = () => {
           </> 
       )}
       
-      {user && user.is_superuser && (
+              {user && user.is_staff && (
           <>
             <Link to="/admin" className="nav-button">HOME</Link>
             <Link to="/admin-projects" className="nav-button">PROJECTS</Link>
-          </> 
-      )}
+
+            {user.is_superuser && (
+              <>
+                <Link to="/admin-users" className="nav-button">USERS</Link>
+              </>
+            )}
+          </>
+        )}
+
   
       </div>
     </nav>

@@ -45,7 +45,7 @@ import AdminFaculty from './pages/AdminPage/ProjectComponents/AdminFaculty'
 import AdminStudent from './pages/AdminPage/ProjectComponents/AdminStudent'
 import AdminBeneficiary from './pages/AdminPage/ProjectComponents/AdminBeneficiary'
 import AdminPartner from './pages/AdminPage/ProjectComponents/AdminPartner'
-
+import AdminUsers from './pages/AdminPage/AdminUsers'
 
 function App() {
   //
@@ -99,7 +99,9 @@ function App() {
                 <Route element={<AdminStudent/>} path ="/admin-projects-student" exact/>
                 <Route element={<AdminBeneficiary/>} path ="/admin-projects-beneficiary" exact/>
                 <Route element={<AdminPartner/>} path ="/admin-projects-partner" exact/>
+                <Route element={<AdminUsers/>} path ="/admin-users" exact/>
 
+                
               </Route>
 
           </Route>

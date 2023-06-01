@@ -211,7 +211,7 @@ const AdminPartner = () => {
     <div className="adpy-page-container">
       
       <NavbarProjectPage />
-      <div className="ap-header-container">
+      <div className="adpy-page-container">
         <h1 className="ap-header-text">PARTNER DIRECTORY</h1>
         <hr className="ap-header-underline" />
         <div className="f-students-container">
