@@ -9,6 +9,16 @@
 - Django
 - PostgreSQL
 
+## Dependencies
+Install Github: 
+https://git-scm.com/downloads
+Install the latest Node.js: 
+https://nodejs.org/en
+Install the latest Python: 
+https://www.python.org/downloads/
+Install Postgres: 
+https://www.postgresql.org/download/
+
 ## Installation
 1. Install pre-requisites, Python, PostrgreSQL, NodeJS
 - A virtual Python environment is highly recommended
