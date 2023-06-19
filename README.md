@@ -10,13 +10,13 @@
 - PostgreSQL
 
 ## Dependencies
-Install Github: 
+- Install Github: 
 https://git-scm.com/downloads
-Install the latest Node.js: 
+- Install the latest Node.js: 
 https://nodejs.org/en
-Install the latest Python: 
+- Install the latest Python: 
 https://www.python.org/downloads/
-Install Postgres: 
+- Install Postgres: 
 https://www.postgresql.org/download/
 
 ## Installation
